@@ -1,0 +1,2 @@
+# MERN Project
+This is a full-stack web application for a Tour and Travel website built using the MERN stack. It allows users to explore and book various travel packages, view destination details, and manage their bookings. The application features user authentication, a responsive user interface, and integrates with a MongoDB database to store travel information.
