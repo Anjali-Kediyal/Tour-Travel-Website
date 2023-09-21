@@ -4,12 +4,15 @@ import {Container, Row, Col} from 'reactstrap';
 import heroImage from '../assets/images/hero-img01.jpg';
 import heroImage02 from '../assets/images/hero-img02.jpg';
 import heroVideo from '../assets/images/hero-video.mp4';
-import Subtitle from '../shared/Subtitle';
 import worldImg from '../assets/images/world.png';
+import experienceImg from '../assets/images/experience.png';
+
+import Subtitle from '../shared/Subtitle';
 
 import SearchBar from '../shared/SearchBar';
 import ServiceList from '../services/ServiceList';
 import FeaturedTourList from '../components/Featured-tours/FeaturedTourList';
+import MasonryImagesGallery from '../components/image-gallery/MasonryImagesGallery';
 
 const Home = () => {
     return <>
@@ -80,6 +83,64 @@ const Home = () => {
         </section>
 
         { /* ============== Featured tour section end ============== */}
+
+        { /* ============== Experience section start ============== */}
+
+        <section>
+            <Container>
+                <Row>
+                    <Col lg='6'>
+                        <div className="experience__content">
+                            < Subtitle subtitle={'Experience'} />
+
+                            <h2>With our all experience <br />we will serve you</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
+                             Quasi explicabo pariatur similique consectetur.</p>
+                        </div>
+
+                        <div className="counter__wrapper d-flex align-items-center gap-5">
+                            <div className="counter__box">
+                                <span>12k+</span>
+                                <h6>Successful Trip</h6>
+                            </div>
+                            <div className="counter__box">
+                                <span>2k+</span>
+                                <h6>Regular clients</h6>
+                            </div>
+                            <div className="counter__box">
+                                <span>15</span>
+                                <h6>Years Experience</h6>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col lg='6'>
+                        <div className="experience__img">
+                            <img src={experienceImg} alt="" />
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </section>  
+
+        { /* ============== Experience section end ============== */}
+
+        { /* ============== Gallery section start ============== */}
+
+        <section>
+            <Container>
+                <Row>
+                    <Col lg='12'>
+                        <Subtitle subtitle={'Gallery'} />
+                        <h2 className="gallery__title">Visit our customer tour gallery</h2>
+                    </Col>
+                    <Col lg='12'>
+                    < MasonryImagesGallery />
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+
+        { /* ============== Gallery section end ============== */}
 
     </>
 }
