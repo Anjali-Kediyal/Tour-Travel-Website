@@ -12,7 +12,7 @@ const Layout = () => {
         <Routers />
         <Footer />
         </>
-    );
-};
+    )
+}
 
 export default Layout;
